@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.calendar-container {
+    width: 420px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: background 0.5s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header button:hover {
+    color: #e0e0e0;
+}
+
+.month-year {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.weekdays div, .days div {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.weekdays div {
+    font-weight: bold;
+    color: #555;
+}
+
+.days div {
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.days div:hover {
+    background-color: #ececec;
+}
+
+.days div.weekend {
+    background-color: #ffe5e5;
+}
+
+.season-winter {
+    background-color: #e0f7fa;
+}
+
+.season-winter .header {
+    background-color: #039be5;
+}
+
+.season-spring {
+    background-color: #e8f5e9;
+}
+
+.season-spring .header {
+    background-color: #43a047;
+}
+
+.season-summer {
+    background-color: #fffde7;
+}
+
+.season-summer .header {
+    background-color: #fbc02d;
+}
+
+.season-fall {
+    background-color: #fff3e0;
+}
+
+.season-fall .header {
+    background-color: #ef6c00;
+}

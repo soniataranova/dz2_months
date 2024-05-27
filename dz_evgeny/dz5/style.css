@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.container {
+    text-align: center;
+}
+
+.counter {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.buttons .button {
+    font-size: 1rem;
+    padding: 5px 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons .button:hover {
+    background-color: #ddd;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.gray {
+    color: gray;
+}
